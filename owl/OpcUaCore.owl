@@ -1,0 +1,795 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#"
+     xml:base="http://www.fortiss.org/kb/opcua/OpcUaCore.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl">
+        <owl:versionIRI rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl/0.1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#objectProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#objectProperty"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#referenceType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#referenceType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#containsNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#containsNode">
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANodeSet"/>
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#firstMethodArgument -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#firstMethodArgument">
+        <rdfs:subPropertyOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasMethodArgument"/>
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethodArgument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#firstValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#firstValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasValue"/>
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataType -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataType">
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataTypeDefinition -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataTypeDefinition">
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeDefinition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataTypeField -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataTypeField">
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeField"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasExtType -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasExtType">
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasMethodArgument -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasMethodArgument">
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethodArgument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasMethodDeclaration -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasMethodDeclaration">
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasParent">
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasRole"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasRolePermission -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasRolePermission">
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UARolePermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasValue">
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nextMethodArgument -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nextMethodArgument">
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethodArgument"/>
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethodArgument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nextValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nextValue">
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue"/>
+        <rdfs:range rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#accessLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#accessLevel"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#accessRestrictions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#accessRestrictions"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#argumentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#argumentName"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#arrayDimensions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#arrayDimensions"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#baseType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#baseType"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#browseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#browseName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#browseNamespace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#browseNamespace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#category"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#containsNoLoops -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#containsNoLoops">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#definitionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#definitionName"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#dependsOnModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#dependsOnModel"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#description"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#displayName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#displayName"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#documentation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#documentation"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#eventNotifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#eventNotifier"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#executable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#executable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#fieldName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#fieldName"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#historizing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#historizing">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#inverseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#inverseName"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isAbstract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isAbstract">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isOptionSet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isOptionSet">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isOptional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isOptional">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isUnion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isUnion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#lastModified -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#lastModified">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#minimumSamplingInterval -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#minimumSamplingInterval"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#modelUri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#modelUri"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nodeId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nodeId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nodeNamespace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nodeNamespace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#numberOfValues -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#numberOfValues"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#permissions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#permissions"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#serverUri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#serverUri"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#symbolicName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#symbolicName"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#symmetric -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#symmetric">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userAccessLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userAccessLevel"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userExecutable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userExecutable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userWriteMask -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userWriteMask"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#value"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#valueRank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#valueRank"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#writeMask -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#writeMask"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataType -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataType">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isAbstract"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeDefinition -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataTypeField"/>
+                <owl:someValuesFrom rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeField"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#definitionName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isOptionSet"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isUnion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeField -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataTypeField">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataType"/>
+                <owl:someValuesFrom rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#fieldName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isOptional"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#valueRank"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAExtension -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAExtension">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethod -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethod">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#executable"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userExecutable"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethodArgument -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAMethodArgument">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#browseName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#browseNamespace"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#displayName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nodeId"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#nodeNamespace"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANodeSet -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANodeSet">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#containsNode"/>
+                <owl:someValuesFrom rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAObject -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAObject">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#eventNotifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAObjectType -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAObjectType">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isAbstract"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAReferenceType -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAReferenceType">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isAbstract"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#symmetric"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UARolePermission -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UARolePermission">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#permissions"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAValue">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAVariable -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAVariable">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataType"/>
+                <owl:someValuesFrom rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#accessLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#historizing"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#userAccessLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#valueRank"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAVariableType -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAVariableType">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#hasDataType"/>
+                <owl:someValuesFrom rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UADataType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#isAbstract"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#valueRank"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAView -->
+
+    <owl:Class rdf:about="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UAView">
+        <rdfs:subClassOf rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#UANode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#containsNoLoops"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fortiss.org/kb/opcua/OpcUaCore.owl#eventNotifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
